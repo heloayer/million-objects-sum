@@ -38,6 +38,7 @@ func main() {
 		}
 	default:
 		log.Println("usage: `go run . 4`, where 4 is the sample number of goroutines will be in use`")
+		return
 	}
 
 	data, err := readFile("../data.json")
