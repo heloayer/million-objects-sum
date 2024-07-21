@@ -28,6 +28,8 @@ var (
 
 func main() {
 
+        runtime.GOMAXPROCS(runtime.NumCPU())
+	
 	switch len(os.Args) {
 	case 1:
 		goroutNum = runtime.NumCPU()
